@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/rlToolbar"
+        layout="@layout/layout_toolbar" />
+
+
+    <LinearLayout
+        android:layout_margin="@dimen/_32sdp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rlToolbar"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilName"
+            style="@style/TextInputLayout"
+            android:layout_below="@+id/tvSignup">
+
+            <EditText
+                android:id="@+id/etName"
+                style="@style/UserStyle"
+                android:hint="Name"
+                android:inputType="textPersonName" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilEmail"
+            style="@style/TextInputLayout"
+            android:layout_below="@+id/tilName">
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:focusableInTouchMode="false"
+                android:focusable="false"
+                style="@style/UserStyle"
+                android:hint="@string/email_address"
+                android:inputType="textEmailAddress" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_marginTop="@dimen/_24sdp"
+            android:text="Update Profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

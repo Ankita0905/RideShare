@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "688293625149",
+    "project_id": "ride-share-51c89",
+    "storage_bucket": "ride-share-51c89.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:688293625149:android:c7a5e0918f468fc6ed9954",
+        "android_client_info": {
+          "package_name": "com.ankita.rideshare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "688293625149-2kp6eq1sk7aqn13heuto74f2318ph1lj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ankita.rideshare",
+            "certificate_hash": "b9ce49f7050cf85f9f307af63d77ccb92965e03e"
+          }
+        },
+        {
+          "client_id": "688293625149-a3ggqfhl6oai7i10pnjbpjnq7kccm2ae.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwVnRb3olQIUYOT66O-M2Bo4oibzmn24k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "688293625149-a3ggqfhl6oai7i10pnjbpjnq7kccm2ae.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

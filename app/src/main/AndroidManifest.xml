@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ankita.rideshare">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:name=".App"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.ForgetPassword" />
+        <activity android:name=".activity.HomeActivity" />
+        <activity android:name=".activity.LoginActivity" />
+        <activity android:name=".activity.RideListActvitty" />
+        <activity android:name=".activity.SignupActivity" />
+        <activity android:name=".activity.CreateRideActivity" />
+        <activity android:name=".activity.ProfileActivity" />
+        <activity android:name=".activity.EditProfileActivity" />
+        <activity android:name=".activity.RideDetailActivity" />
+        <activity android:name=".activity.RequestListActivity" />
+    </application>
+
+</manifest>

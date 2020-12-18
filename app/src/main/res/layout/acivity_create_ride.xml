@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/rlToolbar"
+        layout="@layout/layout_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rlToolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:paddingBottom="@dimen/_24sdp"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/_32sdp"
+            android:paddingEnd="@dimen/_32sdp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilPhoneNumber"
+                style="@style/TextInputLayout">
+
+                <EditText
+                    android:id="@+id/etPhoneNumber"
+                    style="@style/UserStyle"
+                    android:hint="Add Phone Number to Contact *"
+                    android:inputType="phone|number"
+                    android:maxLength="10"
+                    android:tag="+1 " />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilOriginPlace"
+                style="@style/TextInputLayout"
+                android:layout_below="@+id/tilPhoneNumber">
+
+                <EditText
+                    android:id="@+id/etOriginPlace"
+                    style="@style/UserStyle"
+                    android:hint="Origin Place *"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilDestPlace"
+                style="@style/TextInputLayout"
+                android:layout_below="@+id/tilOriginPlace">
+
+                <EditText
+                    android:id="@+id/etDestPlace"
+                    style="@style/UserStyle"
+                    android:hint="Destination Place *"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilDateTime"
+                style="@style/TextInputLayout"
+                android:layout_below="@+id/tilDestPlace">
+
+                <EditText
+                    android:id="@+id/etDateTime"
+                    style="@style/UserStyle"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="@string/date_time"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilEstimatedTime"
+                style="@style/TextInputLayout"
+                android:layout_below="@+id/tilDateTime">
+
+                <EditText
+                    android:id="@+id/etEstimatedTime"
+                    style="@style/UserStyle"
+                    android:hint="Estimated Time (in hours) *"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilCarBrand"
+                style="@style/TextInputLayout"
+                android:layout_below="@+id/tilEstimatedTime">
+
+                <EditText
+                    android:id="@+id/etCarBrand"
+                    style="@style/UserStyle"
+                    android:hint="Car Brand *"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilCarModel"
+                style="@style/TextInputLayout"
+                android:layout_below="@+id/tilCarBrand">
+
+                <EditText
+                    android:id="@+id/etCarModel"
+                    style="@style/UserStyle"
+                    android:hint="Car Model *"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilCarNumber"
+                style="@style/TextInputLayout"
+                android:layout_below="@+id/tilCarModel">
+
+                <EditText
+                    android:id="@+id/etCarNumber"
+                    style="@style/UserStyle"
+                    android:hint="Car Number *"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilIns"
+                style="@style/TextInputLayout"
+                android:layout_height="@dimen/_64sdp"
+                android:layout_below="@+id/tilCarNumber">
+
+                <EditText
+                    android:id="@+id/etIns"
+                    style="@style/UserStyle"
+                    android:layout_height="@dimen/_64sdp"
+                    android:gravity="start|top"
+                    android:hint="Any instructions..."
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <Button
+                android:id="@+id/btnSignup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tilIns"
+                android:layout_marginStart="@dimen/smallMargin"
+                android:layout_marginTop="@dimen/_32sdp"
+                android:layout_marginEnd="@dimen/smallMargin"
+                android:background="@drawable/shape_round_corner_login"
+                android:elevation="10dp"
+                android:text="CREATE RIDE"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

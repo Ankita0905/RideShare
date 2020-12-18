@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/_36sdp">
+
+
+    <ScrollView
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:overScrollMode="never"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/_36sdp"
+        android:paddingBottom="@dimen/_24sdp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/_32sdp"
+            android:paddingEnd="@dimen/_32sdp">
+
+            <ImageView
+                android:id="@+id/ivLogo"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/web_hi_res_512" />
+
+            <TextView
+                android:id="@+id/tvSignup"
+                style="@style/TextAppearance.AppCompat.Large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ivLogo"
+                android:layout_marginTop="@dimen/margin"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="Sign Up" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilName"
+                style="@style/TextInputLayout"
+                android:layout_below="@+id/tvSignup">
+
+                <EditText
+                    android:id="@+id/etName"
+                    style="@style/UserStyle"
+                    android:hint="Name"
+                    android:inputType="textPersonName" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilEmail"
+                style="@style/TextInputLayout"
+                android:layout_below="@+id/tilName">
+
+                <EditText
+                    android:id="@+id/etEmail"
+                    style="@style/UserStyle"
+                    android:hint="@string/email_address"
+                    android:inputType="textEmailAddress" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilPassword"
+                style="@style/TextInputLayout"
+                android:layout_below="@+id/tilEmail">
+
+                <EditText
+                    android:id="@+id/etPassword"
+                    style="@style/UserStyle"
+                    android:hint="@string/password"
+                    android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilRePassword"
+                style="@style/TextInputLayout"
+                android:layout_below="@+id/tilPassword">
+
+                <EditText
+                    android:id="@+id/etRePassword"
+                    style="@style/UserStyle"
+                    android:hint="@string/password"
+                    android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/btnSIgnup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tilRePassword"
+                android:layout_marginStart="@dimen/smallMargin"
+                android:layout_marginTop="@dimen/_32sdp"
+                android:layout_marginEnd="@dimen/smallMargin"
+                android:background="@drawable/shape_round_corner_login"
+                android:elevation="10dp"
+                android:text="Sign Up"
+                android:textColor="@color/white" />
+
+
+            <TextView
+                android:id="@+id/tvSignIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnSIgnup"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_32sdp"
+                android:fontFamily="@font/montserrat_light"
+                android:text="@string/msg_sign_in" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

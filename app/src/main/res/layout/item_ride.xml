@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_4sdp"
+    android:background="@drawable/shape_round_corner"
+    android:elevation="@dimen/_8sdp"
+    android:paddingStart="@dimen/_16sdp"
+    android:id="@+id/rlItemView"
+    android:paddingTop="@dimen/_8sdp"
+    android:paddingEnd="@dimen/_16sdp"
+    android:paddingBottom="@dimen/_8sdp">
+
+    <TextView
+        android:id="@+id/tvRiderName"
+        style="@style/TextAppearance.AppCompat.Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:text="# 10120 454"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvRideDate"
+        android:layout_alignBaseline="@+id/tvRiderName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:text="9:30 AM | 3 May" />
+
+    <TextView
+        android:id="@+id/tvStartPoint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvRideDate"
+        android:layout_alignParentStart="true"
+        android:text="From : Delhi" />
+
+    <TextView
+        android:id="@+id/tvEndPoint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvRideDate"
+        android:layout_alignParentEnd="true"
+        android:text="To : Mumbai" />
+
+    <TextView
+        android:layout_alignBaseline="@+id/tvSendRequest"
+        android:id="@+id/tvEstTime"
+        android:layout_alignParentStart="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvStartPoint"
+        android:text="Est : 10 hrs" />
+
+
+
+    <TextView
+        android:id="@+id/tvSendRequest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvEndPoint"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:background="@drawable/shape_round_corner_login"
+        android:padding="@dimen/_8sdp"
+        android:text="View Details"
+        android:textColor="@color/white" />
+
+</RelativeLayout>
